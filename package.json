@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.2",
+    "dotenv": "^16.4.7",
     "express": "^4.19.2",
     "ip-monitor": "^1.1.1",
     "node-windows": "^1.0.0-beta.8"
