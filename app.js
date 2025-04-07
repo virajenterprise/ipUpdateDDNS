@@ -9,9 +9,9 @@ async function updateIP() {
     method: "get",
     maxBodyLength: Infinity,
     url:
-      "http://dynupdate.no-ip.com/nic/update?hostname=+" +
+      "http://dynupdate.no-ip.com/nic/update?hostname=" +
       process.env.hostname +
-      "+=" +
+      "=" +
       currentipv6is.ip,
     headers: {
       Authorization: "Basic " + btoa(process.env.TOKEN),
@@ -44,7 +44,7 @@ setInterval(() => {
   } else {
     updateIP();
   }
-}, 1800000);
+}, 18000);
 app.listen(3015, () => {
   console.log("Server Started On port 3015........");
 });
