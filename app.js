@@ -44,7 +44,7 @@ setInterval(() => {
   } else {
     updateIP();
   }
-}, 18000);
+}, 1800000); // 30 minutes
 app.listen(3015, () => {
   console.log("Server Started On port 3015........");
 });
